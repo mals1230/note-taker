@@ -1,6 +1,8 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+// Helper method for generating unique ids (for notes)
+const uuid = require('./helpers/uuid');
 
 const PORT = process.env.PORT || 3001;
 
@@ -23,13 +25,21 @@ app.get('/notes', (req, res) =>
 
 // GET Route to return all saved notes as JSON
 app.get('/api/notes', (req, res) =>
-
+    // Obtain existing notes
+    fs.readFile('./db/db.json', 'utf8', (err, notes) => {
+      if (err) {
+        console.error(err);
+    } else {
+      // Convert string into JSON object
+      const savedNotes = JSON.parse(notes);
+      savedNotes.push(newNote);
+    };
 );
 
 // POST Route to save new note, add to DB file, and return new note to client 
-app.post('/api/notes', (req, res) =>
+// app.post('/api/notes', (req, res) =>
 
-);
+// );
 
 // DELETE Route to delete note using the noteID from page and DB - BONUS
 // app.delete('/api/notes/:id')
