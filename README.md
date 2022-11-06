@@ -18,6 +18,11 @@ As a small business owner, I want to be able to write and save important notes s
 - THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
 ## Technologies Used
+- HTML
+- CSS
+- Javascript
+- Express.js
+- Node.js
 
 
 ## Demo 
