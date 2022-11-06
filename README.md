@@ -2,6 +2,16 @@
 
 As a small business owner, I want to be able to write and save important notes so that I can keep track of tasks that I need to complete
 
+[![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](https://lbesson.mit-license.org/)
+
+## Table of Contents
+- [Acceptance Criteria](#acceptance-criteria)
+- [Technologies Used](#technologies-used)
+* [Licenses](#licenses)
+- [Demo](#demo)
+- [Links](#links)
+- [Questions](#questions)
+
 ## Acceptance Criteria
 - GIVEN a note-taking application
 - WHEN I open the Note Taker
@@ -24,5 +34,12 @@ As a small business owner, I want to be able to write and save important notes s
 - Express.js
 - Node.js
 
+## Licenses
+This project is covered under MIT license.  Click on the license badge at the top of the README to learn more.
 
 ## Demo 
+
+## Links
+
+## Questions 
+Have questions about this project? Feel free to go to the project's repo and post an issue

@@ -1,10 +1,12 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+
 const PORT = process.env.PORT || 3001;
+
 const app = express();
 
-// Middleware for parsing JSON and urlencoded form data
+// Middleware for parsing JSON and url encoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -24,13 +26,13 @@ app.get('/api/notes', (req, res) =>
 
 );
 
-// POST Route to save new note, add to DB file, and return new note to client. 
+// POST Route to save new note, add to DB file, and return new note to client 
 app.post('/api/notes', (req, res) =>
 
 );
 
-// DELETE Route to delete note using the noteID from page and DB
-app.delete('/api/notes/:id')
+// DELETE Route to delete note using the noteID from page and DB - BONUS
+// app.delete('/api/notes/:id')
 
 
 
