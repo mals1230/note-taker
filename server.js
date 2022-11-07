@@ -40,10 +40,13 @@ app.get('/api/notes', (req, res) =>
 
 // POST Route to save new note, add to DB file, and return new note to client 
 app.post('/api/notes', (req, res) => {
+    // Log that a POST request was received
     console.log('request recieved to add a new note');
+    // Destructuring assignment for the items in req.body - title and text come from db.json
     const { title, text } = req.body
+    // If all the required properties are present, create a new note
     if (title && text) {
-        const NewNote = {
+        const newNote = {
             title,
             text,
             note_id: uuid(),
