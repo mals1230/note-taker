@@ -38,8 +38,13 @@ As a small business owner, I want to be able to write and save important notes s
 This project is covered under MIT license.  Click on the license badge at the top of the README to learn more.
 
 ## Demo 
+<img src="./images/homepage.png" alt="Screenshot of Homepage">
+<img src="./images/notescreen.png" alt="Screenshot of Note Page with empty fields on right column">
+<img src="./images/noteexample.png" alt="Screenshot of Note Page with an example note written on the right column">
 
 ## Links
+- GitHub Repo - https://github.com/mals1230/note-taker
+- Deployed Application - https://safe-forest-16771.herokuapp.com/
 
 ## Questions 
 Have questions about this project? Feel free to go to the project's repo and post an issue
