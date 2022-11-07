@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Helper method for generating unique ids (for notes)
-// const uuid = require('./helpers/uuid');
+const uuid = require('./helpers/uuid');
 
 const PORT = process.env.PORT || 3001;
 
@@ -46,6 +46,7 @@ app.post('/api/notes', (req, res) => {
     const { title, text } = req.body
     // If all the required properties are present, create a new note
     if (title && text) {
+        // Variables for the new notes
         const newNote = {
             title,
             text,
@@ -59,7 +60,7 @@ app.post('/api/notes', (req, res) => {
         parsedNote.push(newNote);
 
         fs.writeFile(
-            './db/notes.json',
+            './db/db.json',
             JSON.stringify(parsedNotes, null, 4),
             (writeErr) =>
             writeErr 
