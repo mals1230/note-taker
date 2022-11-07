@@ -65,7 +65,16 @@ app.post('/api/notes', (req, res) => {
         );
         };
     });
+    const response = {
+        status: 'success',
+        body: newNote,
+    };
+    console.log(response);
+    res.status(201).json(response);
+    } else {
+        res.status(500).json('Error in posting new note')
     }
+});
 
 // BONUS - DELETE Route to delete note using the noteID from page and DB
 // app.delete('/api/notes/:id')
